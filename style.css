@@ -1,0 +1,102 @@
+* {
+    margin: 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.plans {
+    margin: 10px;
+}
+
+.plans .plan {
+    margin: 25px 20px;
+    padding: 15px 15px;
+    border: 1px rgb(197, 196, 196) solid;
+    display: flex;
+}
+
+.plan div {
+    margin: 0px 5px;
+    padding: 0px 15px;
+}
+
+.plan .choice {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+}
+.plan .offer{ 
+    background-color: #FF6B82;
+    color: #ffff;
+    padding: 0px 5px;
+    margin: 0px 10px;
+}
+.plan .form{
+   
+}
+.planName{
+    font-weight: 700;
+    margin: 0px 5px;
+}
+.info{
+    position: relative;
+    text-align: end;
+}
+#radioBtn{ 
+    accent-color: #FF6B82;
+}
+.form {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.active {
+    background-color: #ff6b8129;
+    border: 2px #FF6B82 solid;
+    outline: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffff;
+    margin: 0;
+    font: inherit;
+    color: #FF6B82;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #FF6B82;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: #FF6B82;
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+  
